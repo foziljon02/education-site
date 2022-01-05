@@ -1,0 +1,27 @@
+.topnav .icon {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .topnav .icon {
+    display: block;
+    width: 50px;
+    float: right;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive button {
+    display: none;
+  }
+
+  .topnav.responsive p {
+    display: none;
+  }
+}
+

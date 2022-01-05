@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+
+* {
+  font-family: "Inter";
+}
+
+body {
+  background-color: #f5f7fd;
+}
+
+.sign-in {
+  &__info {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #0f1b41;
+  }
+
+  &__warning {
+    color: #5a7180;
+  }
+
+  &__options {
+  }
+}
+
+.separator {
+  &__line {
+    width: 190px;
+    height: 1px;
+    background-color: #e0e7ff;
+  }
+
+  &__text {
+    color: #5a7180;
+  }
+}
+
+.form-control {
+  margin-bottom: 22px;
+
+  &__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0f1b41;
+    margin-bottom: 12px;
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid #e0e7ff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 18px 16px 16px;
+  }
+}
+
+.section-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 20px 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  &__link {
+    color: #2f3ced;
+  }
+}
+
+.remember {
+  &__text {
+    color: #657297;
+  }
+}
+
+.logo {
+  &__text {
+    font-size: 22px;
+  }
+}
+
+.dashboard-card {
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    color: #5a7180;
+  }
+}
+
+.progress {
+  &__mark {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 4px solid #2f3ced;
+  }
+}
+
+.accordian {
+  &__container {
+    position: relative;
+  }
+
+  &__container.active {
+    .accordian__content {
+      height: auto;
+    }
+  }
+
+  &__label {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height 3s;
+  }
+}
+
+.instructor {
+  display: flex;
+  align-items: center;
+  // margin-top: 10px;
+
+  &__img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+
+
+.product-card {
+  &__img {
+    height: 149px;
+    border-radius: 4px 4px 0 0;
+    background: url(https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=20&m=1138395421&s=612x612&w=0&h=FPYxPgxJBNucc79Z3fxAehsW6gvjw5jP17CJMsBRjGM=);
+  }
+}
+
+// ===================
+// Many time utilities
+// ===================
+
+.one-line-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.two-line-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.rounded-50 {
+  border-radius: 50%;
+}
+
+// ======
+// Fonts
+// ======
+
+.font-norm-16 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.font-norm-14 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.font-norm-13 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.font-norm-12 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.font-500-12 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.font-500-13 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.font-600-12 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.font-600-13 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.font-600-14 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.font-600-16 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.font-600-18 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+// ======
+// Colors
+// ======
+
+.red-design {
+  background-color: rgba(255, 104, 104, 0.1);
+  color: #ff6868;
+  border-radius: 4px;
+}
+
+.yellow-design {
+  background-color: rgba(255, 193, 104, 0.1);
+  color: #ffa82b;
+  border-radius: 4px;
+}
+
+.blue-design {
+  background-color: rgba(82, 92, 299, 0.1);
+  color: #525ce5;
+  border-radius: 4px;
+}
+
+.green-design {
+  background-color: rgba(87, 208, 148, 0.2);
+  color: #51c98e;
+  border-radius: 4px;
+}
+
+.light-blue-design {
+  background-color: rgba(104, 220, 255, 0.2);
+  color: #0dbbf0;
+  border-radius: 4px;
+}
+
+.pink-design {
+  background-color: rgba(154, 104, 255, 0.2);
+  color: #9a68ff;
+  border-radius: 4px;
+}
+
+.carrot-design {
+  background-color: rgba(255, 149, 104, 0.2);
+  color: #ff9568;
+  border-radius: 4px;
+}
+
+// ======
+// Text Dots
+// ======
+
+.two-line-dots {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.three-line-dots {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.noscroll-x {
+  overflow-x: auto;
+}
+
+/* width */
+.noscroll-x::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+.noscroll-x::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.noscroll-x::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.noscroll-x::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.noscroll-y {
+  overflow-x: auto;
+}
+
+/* width */
+.noscroll-y::-webkit-scrollbar {
+  height: 0px;
+}
+
+/* Track */
+.noscroll-y::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.noscroll-y::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.noscroll-y::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1280px) {
+  .offer {
+    &__text p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offer {
+    padding: 10px;
+
+    &__icon {
+      margin-right: 10px;
+    }
+
+    &__text {
+      p {
+        font-size: 12px;
+      }
+    }
+
+    &__button {
+      width: 150px;
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .offer {
+    &__icon {
+      display: none;
+    }
+  }
+}
