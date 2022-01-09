@@ -10,7 +10,7 @@
           <div
             class="col-span-full xl:col-span-10 lg:col-span-9 md:col-span-8 flex items-center justify-between"
           >
-            <p v-if="$route.name === 'home'" class="font-600-14">Dashboard</p>
+            <p v-if="$route.name === 'index'" class="font-600-14">Dashboard</p>
             <p v-else-if="$route.name === 'books'" class="font-600-14">eBook</p>
             <p v-else-if="$route.name === 'mycourses'" class="font-600-14">
               My Courses
@@ -133,7 +133,7 @@
               </a>
               <p class="font-600-14 mt-[6px] mb-[29px]">Main Menu</p>
 
-              <NuxtLink to="/home">
+              <NuxtLink exact="" to="/">
                 <button
                   :class="[
                     'flex items-center text-left rounded w-[100%] py-[15px] pl-[30px] font-500-13',
